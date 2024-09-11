@@ -49,27 +49,87 @@
 // problem-03-start
 
 
-function checkDigitsInName(name) {
+// function checkDigitsInName(name) {
     
-    if(typeof name !== "string"){
-        return "Invalid Input"; 
-    }
+//     if(typeof name !== "string"){
+//         return "Invalid Input"; 
+//     }
 
-    for(let i = 0; i < name.length; i++){
-        if(name[i] === "1" || name[i] === "2"){
-            return true;
-        }
-    }
+//     if(/\d/.test(name)){
+//         return true;
+//     }
 
-    return false;
+//     return false;
 
-}
+// }
 
-const menu = checkDigitsInName("Raj123");
-console.log('output : ',menu);
+// const menu = checkDigitsInName(["Raj"]);
+// console.log('output : ',menu);
 
 
 // problem-03-end
+
+
+
+
+// problem-04-start
+
+
+// const menu1 = {
+//     name: "Rajib",
+//     testScore: 45,
+//     schoolGrade: 25,
+//     isFFamily : true
+// }
+
+// const menu2 = {
+//     name: "Rajib",
+//     testScore: 45,
+//     schoolGrade: 25,
+//     isFFamily : false
+// }
+
+// const menu3 = {
+//     name: "Rajib",
+//     testScore: 15,
+//     schoolGrade: 25,
+//     isFFamily : true
+// }
+
+
+// function calculateFinalScore(obj) {
+    
+//     if(typeof obj !== "object"){
+//         return "Invalid Input";
+//     }
+
+//     let totalScore = obj.testScore + obj.schoolGrade;
+
+//     if(obj.isFFamily){
+//         totalScore = totalScore + 20;
+//     }
+//     console.log(totalScore);
+
+//     if(obj.isFFamily && totalScore >= 80){
+//         return true;
+//     }
+
+//     else if(obj.isFFamily && totalScore < 80){
+//         return false;
+//     }
+
+//     return false;
+// }
+
+// console.log(calculateFinalScore("hello"));
+
+
+
+
+
+
+
+// problem-04-end
 
 
 

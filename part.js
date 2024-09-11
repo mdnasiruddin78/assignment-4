@@ -1,18 +1,18 @@
-// function calculateTax(income, expenses) {
+function calculateTax(income, expenses) {
 
-//     if(income < 0 || expenses < 0 || income < expenses){
-//         return "Invalid Input";
-//     }
+    if(income < 0 || expenses < 0 || income < expenses){
+        return "Invalid Input";
+    }
 
-//     const total = income - expenses;
+    const total = income - expenses;
 
-//     const tax = total * .20;
+    const tax = total * .20;
 
-//     return tax;
-// }
+    return tax;
+}
 
-// const menu = calculateTax(-5000, 2000);
-// console.log('output',menu);
+const menu = calculateTax(20000, 23000);
+console.log('output',menu);
 
 // problem-01-end
 
@@ -33,7 +33,7 @@
 
 // }
 
-// const item = sendNotification("zihad@gmail.com");
+// const item = sendNotification("nasiruddinanik54gmail.com");
 // console.log('output : ',item);
 
 
@@ -59,7 +59,7 @@
 
 // }
 
-// const menu = checkDigitsInName(["Raj"]);
+// const menu = checkDigitsInName("12345");
 // console.log('output : ',menu);
 
 
@@ -114,10 +114,12 @@
 //         return false;
 //     }
 
-//     return false;
+//     else{
+//         return false;
+//     }
 // }
 
-// console.log(calculateFinalScore("hello"));
+// console.log(calculateFinalScore(1234));
 
 
 
@@ -128,9 +130,34 @@
 // problem-05-start
 
 
+// function  waitingTime(waitingTimes  ,serialNumber) {
+
+//     if(!Array.isArray(waitingTimes) || typeof serialNumber !== "number"){
+//         return "Invalid Input";
+//     }
+    
+//     let sum = 0;
+//     for(let i = 0; i < waitingTimes.length; i++){
+//         sum = sum + waitingTimes[i];
+//     }
+
+//     const avarage = sum / waitingTimes.length;
+    
+//     const interviewTime = Math.round(avarage)
+    
+//     const beforeSerialNumber = serialNumber - 1;
+
+//     const isLeftSerialNumber = beforeSerialNumber - waitingTimes.length;
+
+//     const isratInterviewTime = interviewTime * isLeftSerialNumber;
+
+//     return isratInterviewTime;
 
 
+// }
 
+// const item = waitingTime(true,5);
+// console.log(item);
 
 // problem-05-end
 

@@ -19,27 +19,21 @@
 
 // problem-02-start
 
+
+
 // function sendNotification(email) {
     
-//     if(email === "zihad@gmail.com"){
-//         return "zihad sent you an email from gmail.com";
-//     }
-
-//     else if(email === "farhan34@yahoo.com"){
-//         return "farhan34 sent you an email from yahoo.com";
-//     }
-
-//     else if(email === "nadim.naem5@outlook.com"){
-//         return "nadim.naem5 sent you an email from outlook.com";
-//     }
-
-//     else{
+//     if(!email.includes("@")){
 //         return "Invalid Email";
 //     }
 
+//     let main = email.split("@")
+//     let res = main[0] + " sent you an email from " + main[1]
+//     return res;
+
 // }
 
-// const item = sendNotification("fahim234.hotmail.com");
+// const item = sendNotification("zihad@gmail.com");
 // console.log('output : ',item);
 
 
@@ -55,8 +49,10 @@
 //         return "Invalid Input"; 
 //     }
 
-//     if(/\d/.test(name)){
-//         return true;
+//     for(let i = 0; i < name.length; i++){
+//         if(name[i] >= "0" && name[i] <= "9" && !Array.isArray(name)){
+//             return true;
+//         }
 //     }
 
 //     return false;
@@ -125,11 +121,18 @@
 
 
 
-
-
-
-
 // problem-04-end
+
+
+
+// problem-05-start
+
+
+
+
+
+
+// problem-05-end
 
 
 
